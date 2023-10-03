@@ -1,0 +1,50 @@
+WAS 1 - CORE INFRASTRUCTURE
+
+Project Objectives
+
+The aim of this project is for you to be able to create and manage simple and software RAID volumes as well as configuring and connecting to SAN storage.
+
+Prepare your Lab environment
+
+Install and configure two Windows Server 2019 Datacenter Edition on your Hyper-V.
+Server1 = DC1
+
+Server2 = SRV1
+
+Task 1: Adding Storage Devices to your server
+
+Add four virtual hard disks to your DC1 virtual machine
+
+Task 2: Disk Management (Simple Volumes)
+
+Use the Disk Management tool to configure and manage simple volumes on the first virtual hard disk that you added to your DC1 virtual machine
+
+Task 3: Disk Management (RAID)
+
+Configure and manage RAID volumes on the virtual hard disks that you added to your DC1 virtual machine.
+
+Task 4: Server Manager and Storage Spaces
+
+Create and manage both simple and RAID volumes in Server Manager on the virtual hard disks that you added to your DC1 virtual machine.
+
+Task 5: iSCSI Target Server
+
+Install and configure the iSCSI Target Server on your DC1 virtual machine to provide iSCSI storage to SRV1. Next, you configure the iSCSI Initiator on SRV1 to connect to the iSCSI storage, as well as create a simple volume in Disk Management to access it.
+
+Exercises
+
+The storage capacity provided by a SAN device is often increased over time to meet the needs of the organization. To provide additional capacity for the iSCSI Target Server on your DC1 virtual machine, you can extend the existing iSCSI virtual disk, or add an additional iSCSI virtual disk that uses the existing iSCSI target.
+On your DC1 virtual machine, extend your existing 50 GB iSCSI Virtual Disk 1 to be 60 GB. Next, access Disk Management on your SRV1 and select Rescan Disks from the Action menu to view the additional 10 GB unallocated capacity. Finally, extend the E: volume to 60 GB.
+On your DC1 virtual machine, add a second 10 GB iSCSI virtual disk called iSCSI Virtual Disk 2. Ensure that this iSCSI virtual disk uses the existing iSCSI target (iSCSITarget1). Next, access Disk Management on SRV1 and select Rescan Disks from the Action menu to view the additional 10 GB disk (Disk 2). Finally, configure a 10 GB ReFS simple volume (F:) on Disk 2.
+ 2. Identify any troubleshooting you had to do in these projects. You must include the 7-step troubleshooting process in order to document your steps in resolving the issue.
+
+TROUBLESHOOTING STEPS:
+
+Identify the problem.
+Establish a theory of probable cause.
+Test the theory to determine cause.
+Establish a plan of action to resolve the problem and identify potential effects.
+Implement the solution or escalate as necessary.
+Verify full system functionality and if applicable implement preventative measures.
+Document findings, actions, and outcomes.
+Take multiple screenshots of each task listed above and submit ALL screenshots and troubleshooting steps in one pdf document.
